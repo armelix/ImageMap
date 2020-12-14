@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+
+    <link href="datepicker/jquery.datepick.css" rel="stylesheet"> 
+    <script src="datepicker/jquery.plugin.js"></script>
+    <script src="datepicker/jquery.datepick.js"></script>
+
+    <script src="./rwdmap.js"></script>
+    <script src="./common.js"></script>
+
+
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="pyramid">
+        <img src="./examplemap-1.jpg" usemap="#image-map" />
+    
+        <map name="image-map" >
+            <area target="" alt="0803A" title="0803A" href="" coords="1473,261,1404,355,1476,421,1560,319" data-val="W" shape="poly">
+            <area target="" alt="0803B" title="0803B" href="" coords="1482,418,1563,484,1641,373,1563,319" data-val="W" shape="poly">
+            <area target="" alt="0803C" title="0803C" href="" coords="1638,382,1566,478,1650,544,1726,439" data-val="I" shape="poly">
+            <area target="" alt="0803D" title="0803D" href="" coords="1717,448,1650,541,1726,601,1813,511" data-val="I" shape="poly">
+        </map>
+
+        </div>
+    </div>
+    
+    <div id="reservation-modal" class="hidden modal-container">
+        <div id="modal_form">
+            <form action="" method="post">
+                <div class="form-control">
+                    <label>Date</label>
+                    <input type="text" class="date-picker" />
+                </div>
+                <div class="form-control">
+                    <label>Job Title</label>
+                    <input type="text" name="job_title" placeholder="JOB TITLE"/>
+                </div>
+                <div class="form-control">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Name" />
+                </div>
+                <div class="form-control">
+                    <label>Supervisor</label>
+                    <input type="text" name="supervisor" placeholder="Supervisor" />
+                </div>
+                <div class="form-control">
+                    <label>Window or Interior</label>
+                    <input type="text" name="wi" id="wi" value="" readonly />
+                </div>
+                <div class="form-control">
+                    <label>Designated Position</label>
+                    <input type="text" name="designated_position" id="dp"  value="" readonly/>
+                </div> 
+                <div class="form-control flex-dev">
+                    <button type="submit" name="submit"> Submit </button>
+                    <button type="button" class="close-modal"> Close </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
